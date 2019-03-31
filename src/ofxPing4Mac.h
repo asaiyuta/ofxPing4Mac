@@ -4,6 +4,8 @@
 //  Created by asai on 2019/03/31 because I was a little bored
 //
 
+#ifndef ofxPing4Mac_h
+#define ofxPing4Mac_h
 #include "ofMain.h"
 namespace ofx{
     namespace Ping4Mac{
@@ -154,5 +156,6 @@ namespace ofx{
 
 template<std::size_t NUM_USE_THREADS>
 using ofxPing4MacMulti = ofx::Ping4Mac::NonBlock<NUM_USE_THREADS>;
-
 using ofxPing4Mac = ofx::Ping4Mac::NonBlock<1>;
+
+#endif /* ofxPing4Mac_hs */
