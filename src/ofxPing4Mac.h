@@ -4,6 +4,7 @@
 //  Created by asai on 2019/03/31 because I was a little bored
 //
 
+
 #ifndef ofxPing4Mac_h
 #define ofxPing4Mac_h
 #include "ofMain.h"
@@ -84,7 +85,7 @@ namespace ofx{
                 hosts.push_back(ip_addr);
             }
             void remove(const std::string ip_addr){
-                if(status.count() != 0){
+                if(status.count(ip_addr) != 0){
                     status.erase(ip_addr);
                     hosts.erase(std::remove(hosts.begin(), hosts.end(), ip_addr), hosts.end());
                 }
